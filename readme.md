@@ -5,7 +5,7 @@
 ---
 
 <a name="english"></a>
-## 🇬🇧 English
+##  English
 
 An adaptation of the popular **Aim Botz** training map for Counter-Strike 1.6, optimized and restructured to work natively with **YaPB** (Yet Another PB) through a single clean, lightweight, and clutter-free AMXX plugin.
 
@@ -13,13 +13,13 @@ Based on the original map created by **Cha** ([GameBanana Mod 39942](https://gam
 
 ---
 
-### 🎯 About the Project
+### About 
 
 The original release on GameBanana bundled multiple legacy plugins, redundant configurations, and messy scripts that where required by zbot.
 
 This version preserves the original map and assets (`aimbotzbycha`), but replaces the entire legacy plugin clutter with **a single streamlined AMX Mod X plugin** (`yapb_aim_botz`), specifically designed to manage bots through **YaPB**.
 
-### ✨ Features
+###  Features
 
 -  Automatically populates and configures bots on the Counter-Terrorist (CT) team.
 - Bots spawn frozen in place and do not shoot (`yb_freeze_bots 1` and `yb_dont_shoot 1`), functioning as ideal training targets.
@@ -41,7 +41,7 @@ To run this map and plugin, your Counter-Strike 1.6 installation requires:
 
 ---
 
-### 🚀 Installation
+### Installation
 
 1. Make sure **Metamod**, **AMX Mod X**, and **YaPB** are properly installed in your Counter-Strike 1.6 directory.
 2. Copy the contents of the `cstrike/` folder from this repository into your game's `cstrike/` folder (e.g., `C:\Program Files (x86)\Steam\steamapps\common\Half-Life\cstrike`).
@@ -55,7 +55,7 @@ Observation: the plugin source is included in scripting folder, you can delete t
 
 ---
 
-### ⚙️ Auto-Configured Settings
+###  Auto-Configured Settings
 
 The plugin automatically applies the following CVars when the map starts:
 
@@ -71,8 +71,11 @@ The plugin automatically applies the following CVars when the map starts:
 | `mp_limitteams` | `0` | Disables team size limit checks |
 
 > **Tip:** You can still adjust bot parameters on the fly via the console (e.g. `yb_quota <count>`, make they run around with `yb_freeze_bots 0/1`).
-
 ---
+
+### TODO:
+
+-Interactive menu to tweak options, turn bot kevlar and helmet on/off, make bots run around, make bots shoot back, etc.
 
 
 ### 👤 Credits
