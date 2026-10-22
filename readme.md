@@ -2,7 +2,7 @@
 
 [![Language: English](https://img.shields.io/badge/Language-English-blue)](#english) [![Language: Português](https://img.shields.io/badge/Idioma-Portugu%C3%AAs-green)](#português)
 
-[![Example](https://img.youtube.com/vi/zb1rMaefaAk/maxresdefault.jpg)](https://www.youtube.com/watch?v=zb1rMaefaAk)
+[![YouTube Video](https://img.youtube.com/vi/zb1rMaefaAk/maxresdefault.jpg)](https://www.youtube.com/watch?v=zb1rMaefaAk)
 ---
 
 <a name="english"></a>
