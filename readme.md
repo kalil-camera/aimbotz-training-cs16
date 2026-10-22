@@ -9,13 +9,15 @@
 ## EN English
 
 An adaptation of the popular CSGO/CS2 **Aim Botz** training map, made for Counter-Strike 1.6, optimized and restructured to work natively with **YaPB**, through a single lightweight AMXX plugin.
-Based on the original map created by **Cha** ([GameBanana Mod 39942](https://gamebanana.com/mods/39942)).
+
+Based on the original map created by **Cha** ([GameBanana](https://gamebanana.com/mods/39942)).
 
 ---
 
 ###  About the Project
 
 The original release bundled multiple legacy plugins, redundant configurations, and messy scripts, besides that where required by zbot.
+
 This version preserves the original map and assets (`aimbotzbycha`), but replaces the entire legacy plugin clutter with a single  AMX  plugin (`yapb_aim_botz`), specifically designed to manage **YaPB** bots.
 
 ###  Features
@@ -33,7 +35,7 @@ This version preserves the original map and assets (`aimbotzbycha`), but replace
 
 To run this map and plugin, your Counter-Strike 1.6 installation requires:
 
-1. **[Metamod-R](https://github.com/rehlds/Metamod-R/) or [Metamod-P] (https://github.com/Bots-United/metamod-p/)** 
+1. **[Metamod-R](https://github.com/rehlds/Metamod-R/) or [Metamod-P](https://github.com/Bots-United/metamod-p/)** 
 2. **[AMX Mod X](https://www.amxmodx.org/)** 
 3. **[YaPB](https://github.com/yapb/yapb)** installed and running under Metamod
 
@@ -56,7 +58,7 @@ Observation: the plugin source is included in scripting folder, you can delete t
 
 ### 👤 Credits
 
-- **Cha:** Original creator of the `aimbotzbycha` map ([GameBanana Mod 39942](https://gamebanana.com/mods/39942)).
+- **Cha:** Original creator of the `aimbotzbycha` map ([GameBanana](https://gamebanana.com/mods/39942)).
 - **Kalil:** Adaptation, cleanup, and development of the YaPB AMXX integration plugin.
 - **YaPB Team / YaPB Project:** Modern, intelligent bot system for CS 1.6 / GoldSrc ([GitHub Repository](https://github.com/yapb/yapb)).
 
@@ -67,6 +69,7 @@ Observation: the plugin source is included in scripting folder, you can delete t
 ## 🇧🇷 Português (Brasil)
 
 Uma adaptação do popular mapa de treino **Aim Botz** para Counter-Strike 1.6, otimizado e reestruturado para funcionar nativamente com o **YaPB**  através de um único plugin AMXX leve.
+
 Baseado no mapa original criado por **Cha** ([GameBanana Mod 39942](https://gamebanana.com/mods/39942)).
 
 ---
@@ -74,6 +77,7 @@ Baseado no mapa original criado por **Cha** ([GameBanana Mod 39942](https://game
 ###  Sobre o Projeto
 
 O lançamento original na GameBanana incluía vários plugins antigos, configurações redundantes e scripts confusos, além de só funcionar com zbot.
+
 Esta versão preserva o mapa e os arquivos originais (`aimbotzbycha`), mas substitui toda a desordem de plugins antigos por um único plugin AMX otimizado (`yapb_aim_botz`), projetado especificamente para gerenciar os bots através do **YaPB**.
 
 ###  Funcionalidades
@@ -91,7 +95,7 @@ Esta versão preserva o mapa e os arquivos originais (`aimbotzbycha`), mas subst
 
 Para rodar este mapa e plugin, a sua instalação do Counter-Strike 1.6 precisa de:
 
-1. **[Metamod-R](https://github.com/rehlds/Metamod-R/) ou [Metamod-P] (https://github.com/Bots-United/metamod-p/)** 
+1. **[Metamod-R](https://github.com/rehlds/Metamod-R/) ou [Metamod-P](https://github.com/Bots-United/metamod-p/)** 
 2. **[AMX Mod X](https://www.amxmodx.org/)** 
 3. **[YaPB (Yet Another PB)](https://github.com/yapb/yapb)** instalado e rodando sob o Metamod
 
@@ -112,6 +116,6 @@ Observação: O código-fonte do plugin está na pasta scripting, para os mais d
 
 ### 👤 Créditos
 
-- **Cha:** Criador do mapa original `aimbotzbycha` ([GameBanana Mod 39942](https://gamebanana.com/mods/39942)).
+- **Cha:** Criador do mapa original `aimbotzbycha` ([GameBanana](https://gamebanana.com/mods/39942)).
 - **Kalil:** Adaptação, limpeza e criação do plugin AMXX para integração com o YaPB.
 - **Equipe YaPB / Projeto YaPB:** Sistema de bots inteligente e de alto desempenho para CS 1.6 / GoldSrc ([Repositório no GitHub](https://github.com/yapb/yapb)).
