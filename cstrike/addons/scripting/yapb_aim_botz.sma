@@ -55,7 +55,7 @@ public plugin_init() {
     
     register_message(get_user_msgid("CurWeapon"), "Message_CurWeapon");
    
-   register_clcmd("chooseteam", "Block_ChooseTeam");
+	register_clcmd("chooseteam", "Block_ChooseTeam");
     register_clcmd("say /menu", "Cmd_ShowMenu");
     register_clcmd("say_team /menu", "Cmd_ShowMenu");
 }
@@ -94,7 +94,7 @@ public plugin_cfg() {
     server_cmd("mp_autoteambalance 0");
     server_cmd("mp_limitteams 0");
     server_cmd("mp_freezetime 0");
-    server_cmd("mp_roundtime 9");
+    server_cmd("mp_roundtime 30000");
     server_cmd("mp_startmoney 16000");
     
     server_cmd("yb_join_team CT");
