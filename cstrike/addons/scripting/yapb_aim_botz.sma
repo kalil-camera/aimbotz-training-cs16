@@ -121,7 +121,6 @@ public plugin_init() {
         pause("ad"); 
         return; 
     } 
-    set_task(0.5, "Task_SpawnWeaponModels"); 
     RegisterHam(Ham_Killed, "player", "PlayerKilled", 1);  
     RegisterHam(Ham_Spawn, "player", "PlayerSpawn_Post", 1);
     RegisterHam(Ham_TraceAttack, "player", "Fwd_TraceAttack");  
@@ -138,6 +137,8 @@ public plugin_init() {
     
     // Sincronizador de HUD e Task infinita para atualizar o cronômetro na tela
     g_HudSyncTimer = CreateHudSyncObj();
+	
+    set_task(0.1, "Task_SpawnWeaponModels"); 
     set_task(0.1, "Task_UpdateTimerHUD", .flags="b");
 } 
 
@@ -149,7 +150,7 @@ public client_putinserver(id) {
     if(!g_bIsValidMap) return; 
      
     if(!is_user_bot(id)) { 
-        set_task(1.0, "Task_AutoJoinTR", id); 
+        set_task(0.1, "Task_AutoJoinTR", id); 
     } 
 } 
 
@@ -201,7 +202,7 @@ public plugin_cfg() {
     server_cmd("yb_freeze_bots 1");  
     server_cmd("sv_restartround 1"); 
     server_cmd("yb_quota_mode fill"); 
-    set_task(1.0, "Task_AddBots"); 
+    set_task(0.2, "Task_AddBots"); 
 } 
 
 public Task_AddBots() { 

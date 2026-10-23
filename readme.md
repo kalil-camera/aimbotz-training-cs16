@@ -5,13 +5,11 @@
 ---
 An adaptation of the popular CSGO/CS2 **Aim Botz** training map, made for Counter-Strike 1.6, optimized and restructured to work natively with **YaPB**.
 
-The original release bundled multiple legacy plugins, redundant configurations and messy scripts. Plus, 18MB in external files just to display the weapons on the wall and still required 2 external WAD files.
+The original release bundled multiple redundant configurations and messy scripts, 18MB in external files to display the weapons on the wall and still required 2 external WAD files.
 
 This version, everything is compressed inside the map file (bsp), a single 4MB file.
 
-The weapons on the wall are placed using the plugin instead of loading 11MB in external resources.
-
-One amxx plugin and one bsp map, and you are ready to practice your aim.
+One amxx plugin and one map, and you are ready to practice your aim.
 
 Made for YaPB bots, will not work with zbot.
 
