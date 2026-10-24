@@ -7,7 +7,7 @@
 
 new PLUGIN[] = "AimBotz YaPB"; 
 new AUTHOR[] = "https://github.com/kalil-camera/aimbotz-training-cs16"; 
-new VERSION[] = "1.4"; 
+new VERSION[] = "1.5"; 
 
 enum {  
     CurWeapon_IsActive = 1,  
@@ -206,7 +206,7 @@ public plugin_cfg() {
 } 
 
 public Task_AddBots() { 
-    server_cmd("yb_quota 16"); 
+    server_cmd("yb_quota 25"); 
 } 
 
 // ---------------- TIMER ---------------- // 
