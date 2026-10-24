@@ -90,12 +90,13 @@ new Float:g_fWeaponsAngles[][3] = {
 };
 
 
-// Variáveis do Menu 
+//Menu 
 new bool:g_bInfiniteAmmo = true;  
 new g_iBotArmor = 0;
 new bool:g_bHeadshotOnly = false;
+new bool:g_bBotMovement = false;
 
-// Variáveis do Timer
+//Timer
 new bool:g_bTimerActive[33];
 new Float:g_fStartTime[33];
 new g_iKillCount[33];
@@ -267,6 +268,9 @@ public Cmd_ShowMenu(id) {
     formatex(szItem, charsmax(szItem), "Headshot Only: %s", g_bHeadshotOnly ? "\yOn" : "\rOff");
     menu_additem(menu, szItem, "3");
      
+    formatex(szItem, charsmax(szItem), "Bot Movement: %s", g_bBotMovement ? "\yOn" : "\rOff");
+    menu_additem(menu, szItem, "4");
+     
     menu_display(id, menu, 0); 
     return PLUGIN_HANDLED; 
 } 
@@ -295,12 +299,16 @@ public Menu_Handler(id, menu, item) {
         case 3: { 
             g_bHeadshotOnly = !g_bHeadshotOnly;
         }
+        case 4: {
+            g_bBotMovement = !g_bBotMovement;
+            server_cmd("yb_freeze_bots %d", g_bBotMovement ? 0 : 1);
+        }
     } 
      
     menu_destroy(menu); 
     Cmd_ShowMenu(id);  
     return PLUGIN_HANDLED; 
-} 
+}
 // -------------------------------------- // 
 
 public Fwd_TraceAttack(Victim, Attacker, Float:Damage, Float:Direction[3], tracehandle, DamageBits) {
