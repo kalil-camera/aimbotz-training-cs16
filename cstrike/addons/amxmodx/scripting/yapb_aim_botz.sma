@@ -191,14 +191,18 @@ public plugin_cfg() {
     server_cmd("mp_autoteambalance 0"); 
     server_cmd("mp_limitteams 0"); 
     server_cmd("mp_freezetime 0"); 
-    server_cmd("mp_roundtime 500"); 
+    server_cmd("mp_roundtime 0"); 
     server_cmd("mp_startmoney 16000"); 
+    server_cmd("mp_buytime 999999"); 
      
     server_cmd("yb_join_team CT"); 
+    server_cmd("yb_first_human_restart 0"); 
     server_cmd("yb_botskin_ct 0"); 
     server_cmd("yb_chat 0"); 
+    server_cmd("yb_radio_mode 0"); 
     server_cmd("yb_chat_percent 0"); 
-    server_cmd("yb_difficulty 0"); 
+    server_cmd("yb_rotate_bots 0"); 
+    server_cmd("yb_spraypaints 0"); 
     server_cmd("yb_display_welcome_text 0"); 
     server_cmd("yb_freeze_bots 1");  
     server_cmd("sv_restartround 1"); 
