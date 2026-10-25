@@ -5,11 +5,15 @@
 ---
 An adaptation of the popular CSGO/CS2 **Aim Botz** training map, made for Counter-Strike 1.6, optimized and restructured to work natively with **YaPB**.
 
-The original release bundled multiple redundant configurations and messy scripts, 18MB in external files to display the weapons on the wall and still required 2 external WAD files.
+The original release bundled multiple redundant configurations and messy scripts, external files to display the weapons on the wall and external WAD files.
 
-This version, everything is compressed inside the map file (bsp), a single 4MB file.
+This version, the plugin handles weapon display without using custom models, everything is compressed inside the map file (bsp), a single file.
 
 One amxx plugin and one map, and you are ready to practice your aim.
+
+The YAPB map waypoints are also included, in case some people are on low end PCs that take too much time to create them.
+
+Several YaPB cvars are set on map start, I've tried to predict and avoid most bugs by setting the optimal settings. This is only applied when loading aimbotz map.
 
 Made for YaPB bots, will not work with zbot.
 
@@ -18,7 +22,7 @@ Made for YaPB bots, will not work with zbot.
 -  Automatically populates and configures bots on the CT team.
 -  Bots spawn frozen in place and do not shoot.
 -  Human players automatically join the TR team. The team selection menu is blocked to avoid disruptions.
-- Shoot the weapons on the wall (the bottom part) to recieve it. You can hold all weapons at once.
+-  Shoot the weapons on the wall (the bottom part) to recieve it. You can hold all weapons at once.
 -  When killed, bots respawn within 1 second.
 -  Type /menu in game chat to tweak options (infinite ammo, bots kevlar/helmet, headshot only...)
 -  Type /timer to start a timer with kill count, type /timer again to stop.
